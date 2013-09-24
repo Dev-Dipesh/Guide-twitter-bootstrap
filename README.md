@@ -4,14 +4,6 @@
 
 ----------
 
-
-By voting in our [first public poll][poll-results], the people have chosen **Twitter Bootstrap** as the next tutorial. Therefore, it is with great honour that we present this tutorial, so you can have a directed introduction to Bootstrap.
-This tutorial was started by [Dispesh] and reconstructed by [Pedro], they are the original authors. Feel free to contribute.
-
-
-----------
-
-
 ## Introduction
 Maybe you are a good website programmer, a born coder but you suck terribly bad in art and overall design. 
 Maybe your job demands fast websites for clients to see and you can't waste time. 
