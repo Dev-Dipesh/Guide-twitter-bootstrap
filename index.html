@@ -1,0 +1,488 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Guide-twitter-bootstrap by Dev-Dipesh</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Guide-twitter-bootstrap</h1>
+        <p></p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/Dev-Dipesh/Guide-twitter-bootstrap" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/Dev-Dipesh/Guide-twitter-bootstrap/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/Dev-Dipesh/Guide-twitter-bootstrap/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h2>
+<a name="prior-requirements" class="anchor" href="#prior-requirements"><span class="octicon octicon-link"></span></a>Prior Requirements</h2>
+
+<ul>
+<li><a href="http://www.codecademy.com/tracks/web">Web Fundamentals Track</a></li>
+<li><a href="http://www.codecademy.com/tracks/javascript">Javascript Track</a></li>
+</ul><hr><h2>
+<a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h2>
+
+<p>Maybe you are a good website programmer, a born coder but you suck terribly bad in art and overall design. 
+Maybe your job demands fast websites for clients to see and you can't waste time. 
+Maybe you even are a talented artist, but you fight a never ending battle to make sure your website looks consistent in all browsers.
+Maybe your projects have become tangled with many sets of random tools and you just need a framework that encompasses all of your basic needs.</p>
+
+<p>Bootstrap is one of the many solutions out there that will help you fix these problems!
+By the end of this tutorial, you should be able to answer the following questions on your own:</p>
+
+<ol>
+<li>What is Bootstrap?</li>
+<li>What is the need of Bootstrap?</li>
+<li>What are its features?</li>
+<li>How does it work?</li>
+<li>How is the community support for Bootstrap?</li>
+<li>What are Bootstrap Problems?</li>
+<li>Are there are any other alternatives to Bootstrap? </li>
+</ol><p><strong>So, troops! Let's advance...</strong></p>
+
+<h2>
+<a name="twitter-bootstrap" class="anchor" href="#twitter-bootstrap"><span class="octicon octicon-link"></span></a>Twitter Bootstrap</h2>
+
+<h3>
+<a name="what-is-twitter-bootstrap-" class="anchor" href="#what-is-twitter-bootstrap-"><span class="octicon octicon-link"></span></a>What is Twitter Bootstrap ?</h3>
+
+<p>Twitter Bootstrap (mainly known as <strong>Bootstrap</strong> only) is a framework developed by Mark Otto and Jacob Thornton when they were creating Twitter (that is why some people call it Twitter Bootstrap).</p>
+
+<p>Bootstrap is a fast, intuitive and powerful front-end framework for faster and easier web development. It gives you all the tools you need to make websites, web applications and prototypes.</p>
+
+<p>Bootstrap has template files, as well as a lot of optional JavaScript extensions that allow you to make modal windows, drop down menus, tab controls and carousel controls, which are all styled in advance, saving you from the trouble.</p>
+
+<p>As if that was not enough, it also comes with styles for buttons, forms, tables,  typography and a collection of over 140 icons in both black and white versions.</p>
+
+<p>Another very important feature of Bootstrap is that it comes with a 12 column grid system. If you don't know what that is, there is no problem - just know that it allows you to divide your website in equally spaced columns, thus making it look the same in all computers, with big screens, small screens, and even smartphones and tablets. </p>
+
+<p>Bootstrap was originally designed to help provide some consistency across tools the guys were building internally. Since its first public (open source) release in 2011 (see the blog post <a href="https://dev.twitter.com/blog/bootstrap-twitter">here</a>) it has found huge popularity among web developers for its ease of use and feature set, and in 2012 was the most popular project on <a href="https://github.com/twitter/bootstrap">GitHub</a>. Its advocates praise Bootstrap’s ability to build usable applications, with clean code, quickly and easily. </p>
+
+<h3>
+<a name="purpose-of-development-" class="anchor" href="#purpose-of-development-"><span class="octicon octicon-link"></span></a>Purpose of Development ?</h3>
+
+<p>Before Bootstrap, various libraries and tools were used for interface development and overall web design, which led to inconsistencies and resulted in code very hard to maintain over time. According to Twitter developer Mark Otto, in the face of those challenges:</p>
+
+<blockquote>
+<p>(...) [A] super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company. (...)</p>
+</blockquote>
+
+<p>Bootstrap was born from the need to fix this problem, and it is this focus that made it the popular framework many know and use today.</p>
+
+<h3>
+<a name="at-its-heart" class="anchor" href="#at-its-heart"><span class="octicon octicon-link"></span></a>At its heart</h3>
+
+<p>At its heart, Twitter Bootstrap is basically simple good old CSS, but it uses the <a href="http://lesscss.org/">LESS</a> pre-processor to add a lot more functionality than CSS could otherwise provide, together with JavaScript plugins and an HTML grid system.
+Because you can actually choose what you want to download from the web page, the package size is variable, giving you a lot of choice to make, or if you are like me, just download everything without second thoughts :P</p>
+
+<h3>
+<a name="features" class="anchor" href="#features"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<ul>
+<li>
+<strong>Fixed and Fluid Layouts</strong> - A standard 940 pixel wide and 12 column grid system is provided, in a fixed and fluid version. The fixed version defines column's size by  pixels and the fluid version uses % instead. One way or another, the grid system allows you to make Fixed or Fluid layouts and to easily structure your website skeleton.</li>
+<li>
+<strong>Support for responsive design</strong> - Bootstrap allows you turn on the responsive design feature. This feature will adjust your website to other screen sizes (from other devices, such as tablets or smartphones) making it work without you having to change single line of code.</li>
+<li>
+<strong>Interface components</strong> - A large number of interface components are also provided. These include standard buttons, labels, pre-formatted warning and system messages, navigation controls, wizard controls, pagination, and breadcrumbs.</li>
+<li>
+<strong>JavaScript snippets</strong> - Again the focus here is on user interface elements. Included is code to help build tool tips, dialog boxes, as well as more traditional form and input elements (including a nice auto complete feature).</li>
+</ul><h3>
+<a name="download-bootstrap" class="anchor" href="#download-bootstrap"><span class="octicon octicon-link"></span></a>Download Bootstrap</h3>
+
+<p>There are two ways to get Bootstrap:</p>
+
+<ol>
+<li>Download everything</li>
+<li>Customize your download</li>
+</ol><h4>
+<a name="download-everything" class="anchor" href="#download-everything"><span class="octicon octicon-link"></span></a>Download everything</h4>
+
+<ol>
+<li> Go to the <a href="http://twitter.github.com/bootstrap/">Bootstrap homepage</a>
+</li>
+<li> Click on the large Download Bootstrap button.</li>
+<li>Locate the download file and unzip or extract it. </li>
+</ol><p>For version 2.3.2, you should get a folder named simply bootstrap. Inside this folder you should find the folders and files shown:</p>
+
+<pre><code>bootstrap/
+    ├── css/
+    │   ├── bootstrap.css
+    │   ├── bootstrap.min.css
+    │   ├── bootstrap-responsive.css
+    │   └── bootstrap-responsive.min.css
+    ├── js/
+    │   ├── bootstrap.js
+    │   └── bootstrap.min.js
+    └── img/
+        ├── glyphicons-halflings.png
+        └── glyphicons-halflings-white.png
+</code></pre>
+
+<h4>
+<a name="customize-your-download" class="anchor" href="#customize-your-download"><span class="octicon octicon-link"></span></a>Customize your download</h4>
+
+<ol>
+<li>Click the <strong>Customize</strong> tab on the top of the page.</li>
+<li>Check, uncheck and modify everything you want for your customized download.</li>
+<li>Click the Customize Download button and done!</li>
+</ol><h3>
+<a name="get-started" class="anchor" href="#get-started"><span class="octicon octicon-link"></span></a>Get Started</h3>
+
+<p>For this simple example, I am going to focus on the following functionalities of bootstrap:</p>
+
+<ul>
+<li>Responsive design</li>
+<li>Navigation Bar</li>
+<li>Fluid Layout</li>
+<li>Sidebar</li>
+</ul><p>Once we are done with this lesson, your website will look like this (click the image to visit the website!):
+<a href="http://tinyurl.com/n3fnyeh"><img src="http://tinyurl.com/loboll6" alt="website-screenshot"></a></p>
+
+<h4>
+<a name="files-and-resources" class="anchor" href="#files-and-resources"><span class="octicon octicon-link"></span></a>Files and Resources</h4>
+
+<p>As you can see, this website comes loaded with some resources, namely images. Although I could use a link to the images I decided not to do so because that would be a bad practice, thus I downloaded all the necessary images into a nice folder. You can download all the necessary images by clicking the following links:</p>
+
+<ul>
+<li><a href="http://tinyurl.com/ljwoh2d">codecademy-logo-white</a></li>
+<li><a href="http://tinyurl.com/lpd47yp">gridbg</a></li>
+</ul><p>The full CSS file and HTML files can also be found here:</p>
+
+<ul>
+<li><a href="http://tny.cz/edba6574">style.css</a></li>
+<li><a href="http://tny.cz/ba9a9b74">index.html</a></li>
+</ul><p>Before we start with the mini-guide, I want to make clear, that although this website does have a CSS file, the main focus of this lesson will be the Bootstrap code, which is all in the HTML file. That is the beauty of Bootstrap, you don't need to worry about anything else.</p>
+
+<h4>
+<a name="folder-organization" class="anchor" href="#folder-organization"><span class="octicon octicon-link"></span></a>Folder Organization</h4>
+
+<p>One important aspect of any web developer is how he/she organizes the files of the website. In my case, I will be using the following folder structure:</p>
+
+<pre><code>myBootstrapWebsite/
+      ├── css/
+      │   └── style.css
+      ├── html/
+      │   └── index.html
+      ├── image/
+      │   ├── codecademy-logo-white.png
+      │   └── gridbg.gif
+      └── library/
+          └── bootstrap (folder, with all extracted files)
+</code></pre>
+
+<p>So, as you can see the structure of my website is quite simple. Just as any first example should be :P</p>
+
+<h4>
+<a name="responsive-design" class="anchor" href="#responsive-design"><span class="octicon octicon-link"></span></a>Responsive design</h4>
+
+<p>Responsive design is an optional feature that you can enable in your website. It basically allows you to display your website in multiple devices of various screen sizes making it look consistent and readable without you having to change a single line of code.
+By detecting the size of the screen Bootstrap automatically adjusts your website in the best possible way.</p>
+
+<p>This power however, should <strong>not</strong> be abused. Bootstrap official documentation defends that if you are ever to be serious about web development, you should make a version of your website for each device. For the purposes of this simple tutorial however, we will be using the responsive design feature, so you can see it in action.</p>
+
+<p>To enable the responsive design feature to your website, you have to add the following piece of HTML code to the header:</p>
+
+<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;link href="../library/bootstrap/css/bootstrap-responsive.css" rel="stylesheet"&gt;
+</code></pre>
+
+<p>And you are done! Just remember to <strong>update the paths</strong>!</p>
+
+<p>How can you test it? Well, that is easy. You can simply resize your browser to any size. In fact, you can try it with my example website. </p>
+
+<p>This is what it looks like when I have responsive design <strong>enabled</strong>:
+<img src="http://tinyurl.com/lb6lwne" alt="responsive-design-true"></p>
+
+<p>And this is what happens when I have responsive design <strong>disabled</strong>:
+<img src="http://tinyurl.com/l6bkofv" alt="responsive-design-false"></p>
+
+<p>As you can see there is quite a difference. By just entering 2 lines of code, my website now looks presentable to a client in an Android Tablet or to a client in an iPhone.</p>
+
+<h4>
+<a name="navigation-bar" class="anchor" href="#navigation-bar"><span class="octicon octicon-link"></span></a>Navigation Bar</h4>
+
+<p>The navigation bar is quite simple. The following code example is quite straight:</p>
+
+<pre><code>&lt;div class="navbar navbar-fixed-top navbar-inverse"&gt;
+    &lt;div class="navbar-inner"&gt;
+        &lt;div class="container-fluid"&gt;
+            &lt;a class="brand" href="#"&gt;&lt;img src="../image/codecademy-logo-white.png" width="111" height="30" alt="w3resource logo"&gt;&lt;/a&gt;
+            &lt;div class="nav-collapse"&gt;
+                &lt;ul class="nav"&gt;
+                    &lt;li class="active"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;p class="navbar-text pull-right"&gt;Logged in as &lt;a href="#"&gt;username&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;  
+</code></pre>
+
+<p>So, let us now decompose what is happening. This is structured as a set of nested HTML <code>&lt;div&gt;&lt;/div&gt;</code> elements, with some links <code>&lt;a ...&gt;&lt;/a&gt;</code> and an unordered list <code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code>. If you made the <a href="http://www.codecademy.com/tracks/web">Web Fundamentals Track</a> you should be quite familiar with these tags by now. 
+The amazing and important thing here, are the classes. They are what defines the style of everything in your page.  </p>
+
+<p>So, with no further delay, by reading the <a href="http://www.it-ebooks.info/book/2188/">Twitter Bootstrap How-To</a> guide, you can easily find out that:</p>
+
+<ul>
+<li>
+<code>navbar</code> provides the outside containing element for all contents of the navbar. </li>
+<li>
+<code>navbar-inverse</code> calls for a dark navbar background with light font color.</li>
+<li>
+<code>navbar-fixed-top</code> fixes the navbar at the top of the window and lets page content
+scroll underneath it (this requires padding at the top of the body element. See it in
+the embedded style sheet in the head of the index.html file.)</li>
+<li>
+<code>navbar-inner</code> provides height, padding, and background color and gradients.</li>
+<li>The div of class <code>nav-collapse</code> serves as the containing element for the menu
+items which are dropped down in narrow-viewport navigation.</li>
+<li> <code>class="active"</code> on the Home navigation item provides the darkened
+background color which indicates the current page.</li>
+<li>
+<code>container-fluid</code> is the fluid brother of <code>container</code> and it constrains the width of the navbar contents, centers them within a wide screen, and includes a clearfix so that it will contain floated child elements.</li>
+<li>Last, <code>navbar-text pull-right</code> simply define that its a text field and we want it placed in the right.</li>
+</ul><p>See? Reading the documentation actually helps! And this was pretty much easy :p</p>
+
+<h4>
+<a name="fluid-layout" class="anchor" href="#fluid-layout"><span class="octicon octicon-link"></span></a>Fluid Layout</h4>
+
+<p>Bootstrap has two options for your 940 grid layout. One of them is the <strong>fixed</strong> grid layout. In this layout, everything is measured by pixels, and the website overall will look like what you expect if all the screens have a similar size or width-height ratio.
+The other option, and the one I use, is the <strong>fluid</strong> grid. This fluid grid allows us to build fluid layouts. These layouts use <code>%</code> instead of pixels for the measurements, and so everything will always scale accordingly, even if the screen sizes differ significantly or their ratio is not perfect.</p>
+
+<p>Fixed and Fluid grids allows us to do Fixed and Fluid Layouts respectively (you can actually mix them, but <strong>you should never do that</strong>). The two have some basic differences and I understand that it may be confusing for some beginners. For this reason, I strongly recommend watching and reading the following sources:</p>
+
+<ul>
+<li><a href="https://tutsplus.com/lesson/the-grid-system/">tuts-plus-grid</a></li>
+<li><a href="http://stackoverflow.com/questions/9780333/fluid-or-fixed-grid-system-in-responsive-design-based-on-twitter-bootstrap">stackoverflow-layout-grid-explained</a></li>
+</ul><p>Now that you probably understand better the differences between fixed and fluid layouts (and why I decided to use a fluid layout) let us delve into the code:</p>
+
+<pre><code>&lt;div class="container-fluid"&gt;  
+    &lt;div class="row-fluid"&gt;  
+        &lt;div class="span3"&gt;
+            &lt;!-- Stuff inside --&gt;  
+        &lt;/div&gt;  
+
+        &lt;div class="span9"&gt;
+            &lt;div class="row-fluid"&gt;  
+                &lt;div class="span3"&gt;
+                    &lt;!-- Stuff inside --&gt;  
+                &lt;/div&gt; 
+
+                &lt;div class="span3"&gt;
+                    &lt;!-- Stuff inside --&gt;  
+                &lt;/div&gt; 
+
+                &lt;div class="span3"&gt;
+                    &lt;!-- Stuff inside --&gt;  
+                &lt;/div&gt; 
+            &lt;/div&gt;  
+            &lt;!-- More stuff inside, like footers and such --&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+
+<p>Presented here is the skeleton of the application, the Fluid Grid that I used. Assuming that you have seen the previous video on grid systems and that you played a little bit with the stackoverflow question that I presented earlier, this should be familiar.</p>
+
+<p>First I define a <code>container-fluid</code>, which will hold my rows, and then I create one giant row for the website. This row shall be the mother row. I divided the mother row into two spans, one with size 3 and another with size 9. The span3 portion will receive a sidebar, which we will discuss later. The span9 portion is a little more tricky. Inside this portion I add a leaderboard and create another row, dividing the later one evenly with three span4 tags.</p>
+
+<p>To better understand this concept you should fire up <a href="https://developers.google.com/chrome-developer-tools/">Chrome Dev Tools</a>, or in may case (Firefox Fanboy), <a href="http://getfirebug.com/">Firebug</a>!</p>
+
+<p>Firebug will highlight the areas of the respective HTML tags that we have selected. </p>
+
+<p>Mother Row:
+<img src="http://tinyurl.com/ldh4mf4" alt="mother-row"></p>
+
+<p>As you can see, the mother row encompasses all. </p>
+
+<p>Then we have the span3 (with a sidebar child tag) and span9 tags, which are children of the mother row:
+<img src="http://tinyurl.com/kkwhb4o" alt="span3"><img src="http://tinyurl.com/k6vlzkc" alt="span9"></p>
+
+<p>span9 has a leaderboard (which we do not really care about) and another row.
+<img src="http://tinyurl.com/ldef7o2" alt="leaderboard"><img src="http://tinyurl.com/kz5l8l3" alt="child-row"></p>
+
+<p>And now, the row inside span9, has three span4 tags.
+<img src="http://tinyurl.com/nxxmd5y" alt="span4-1"><img src="http://tinyurl.com/n7tkppv" alt="span4-2"><img src="http://tinyurl.com/mnm374f" alt="span4-3"></p>
+
+<p>By now the Fluid layout on my website should be clear to you. If not, I strongly recommend that you either install and use <a href="http://getfirebug.com/">Firebug</a>, or use <a href="https://developers.google.com/chrome-developer-tools/">Chrome Dev Tools</a> to toy around with the example.</p>
+
+<h4>
+<a name="sidebar" class="anchor" href="#sidebar"><span class="octicon octicon-link"></span></a>Sidebar</h4>
+
+<p>With the skeleton base explain we can now go to the sidebar:</p>
+
+<pre><code>&lt;div class="well sidebar-nav"&gt;  
+    &lt;ul class="nav nav-list"&gt;  
+        &lt;li class="nav-header"&gt;Frontend&lt;/li&gt;  
+        &lt;li class="active"&gt;&lt;a href="#"&gt;HTML 4.01&lt;/a&gt;&lt;/li&gt;  
+        &lt;li&gt;&lt;a href="#"&gt;HTML5&lt;/a&gt;&lt;/li&gt;  
+        &lt;li&gt;&lt;a href="#"&gt;CSS&lt;/a&gt;&lt;/li&gt;  
+        &lt;li&gt;&lt;a href="#"&gt;JavaScript&lt;/a&gt;&lt;/li&gt;  
+        &lt;li&gt;&lt;a href="#"&gt;Twitter Bootstrap&lt;/a&gt;&lt;/li&gt;  
+        &lt;li&gt;&lt;a href="#"&gt;Flex&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;JQuery&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Javascript&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="nav-header"&gt;Backend&lt;/li&gt;  
+        &lt;li&gt;&lt;a href="#"&gt;PHP&lt;/a&gt;&lt;/li&gt;  
+        &lt;li&gt;&lt;a href="#"&gt;Ruby&lt;/a&gt;&lt;/li&gt;  
+        &lt;li&gt;&lt;a href="#"&gt;Python&lt;/a&gt;&lt;/li&gt;  
+    &lt;/ul&gt;  
+&lt;/div&gt;
+</code></pre>
+
+<p>The sidebar is quite simple as you can see. You create a sidebar by adding <code>class=sidebar-nav</code>. The <code>well</code> part is just to give a simple inset effect to the bar.
+The content of the sidebar is an unordered list.The classes <code>nav nav-list</code> set our sidebar with a content that we can "navigate" through. 
+Finally, <code>nav-header</code> defines a header, or a separation if you will, on our bar. </p>
+
+<h4>
+<a name="conclusion" class="anchor" href="#conclusion"><span class="octicon octicon-link"></span></a>Conclusion</h4>
+
+<p>And that is it! By pulling all of these concepts together you should now have your first Bootstrap website done! This website is responsive and fluid, so it will work in pretty much every device!
+Here we explored some of Bootstrap basic concepts, but trust me, your journey has only begun, there is a lot more for you to learn! </p>
+
+<h3>
+<a name="learning-resources" class="anchor" href="#learning-resources"><span class="octicon octicon-link"></span></a>Learning Resources</h3>
+
+<p>Bootstrap is quite a complex framework, and so you have a lot of learning to do. In this section we provide guides and links for you to learn more. If you find any resources you feel like sharing, please suggest them!</p>
+
+<ol>
+<li>
+<a href="http://twitter.github.io/bootstrap/index.html">Official Website</a> - for everything about Bootstrap.</li>
+<li>
+<a href="http://www.w3resource.com/twitter-bootstrap/tutorial.php">w3resources</a> - for code examples. Careful though, they use a customized version of Bootstrap 2.1.0 in their examples, and you have a more recent version.</li>
+<li>
+<a href="http://www.it-ebooks.info/book/2188/">Twitter Bootstrap Web Development How-To</a> - a free PDF book that explains everything about Bootstrap and aids you in the creation of examples.</li>
+<li>
+<a href="http://www.youtube.com/watch?v=BVFQc0iGFwU&amp;list=PL7029EEFC21D2DC58">Youtube series</a> - a set of Youtube videos made by an amateur that introduce you to the basic functionalities of Bootstrap.</li>
+<li>
+<a href="https://tutsplus.com/lesson/bootstrap-overview-and-installation/">Tuts Plus Introduction to Bootstrap</a> - a set of 2 videos that introduces you to bootstrap and explains very clearly the concept of grids and layouts. By far the best in the matter.</li>
+</ol><h3>
+<a name="bootstrap-community-and-free-resources" class="anchor" href="#bootstrap-community-and-free-resources"><span class="octicon octicon-link"></span></a>Bootstrap community and free resources</h3>
+
+<p>One of the main advantages of using a well known framework is the community support. This is very helpful in our case, mainly because it means we can use free template and themes from the Internet to develop our websites. Following are a few examples of websites that fill this niche:</p>
+
+<ul>
+<li><a href="http://bootswatch.com/">http://bootswatch.com/</a></li>
+<li><a href="http://www.bootstrapfree.com/">http://www.bootstrapfree.com/</a></li>
+<li><a href="http://bootstrapstyler.com/">http://bootstrapstyler.com/</a></li>
+<li><a href="http://responsivewebinc.com/bootstrap-themes/">http://responsivewebinc.com/bootstrap-themes/</a></li>
+</ul><p>There are far more free themes and templates in the Internet that you can explore, in fact these are just some of the top results from my Google search. If however you find something worth mentioning, please suggest it here so we can add it!</p>
+
+<h3>
+<a name="bootstrap-problems" class="anchor" href="#bootstrap-problems"><span class="octicon octicon-link"></span></a>Bootstrap problems</h3>
+
+<p>By now you probably think that Bootstrap is the <em>holy grail</em>. Well, Bootstrap is very good, but it also has many problems. Some of the mains hassles you will find when working are:</p>
+
+<ul>
+<li>There is a large set of customization to Bootstrap. This divides communities and thus there are many customized and personalized versions of Bootstrap out there. Remember that although a website may use Bootstrap, its customized features may make it completely different from what you would normally expect. Furthermore, different customizations of Bootstrap are not compatible between them.</li>
+<li>Bootstrap has quite a limited set of art and design tools. Some people try to fix this by creating kits that expand Bootstrap's capabilities, such as <a href="http://designmodo.github.io/Flat-UI/">Flat UI</a>.</li>
+<li>Bootstrap had many version before, and their compatibility changes significantly from version to version.</li>
+</ul><h3>
+<a name="bootstrap-alternatives-and-competition" class="anchor" href="#bootstrap-alternatives-and-competition"><span class="octicon octicon-link"></span></a>Bootstrap alternatives and competition</h3>
+
+<ol>
+<li>
+<a href="http://foundation.zurb.com/">Foundation</a> - Advertised as "The most advanced responsive front-end framework in the world" Foundation directly competes with Twitter Bootstrap in the same area. For more information, feel free to read <a href="http://designshack.net/articles/css/framework-fight-zurb-foundation-vs-twitter-bootstrap/">this blog that compares the two</a>.</li>
+<li>
+<a href="http://www.sass.fffunction.co/">Sassaparilla</a> - Sassaparilla is a fast way to start your responsive web design projects that harness the power of SASS and Compass.</li>
+<li>
+<a href="http://compass-style.org/">Compass</a> - Quick start Compass with Mixture, Compass is an open-source CSS Authoring Framework.</li>
+<li>
+<a href="http://inuitcss.com/">inuit.css</a> - A powerfull, scalable, Sass-based, BEM, OOCSS framework.</li>
+<li>
+<a href="http://bourbon.io/">Bourbon</a> - A simple and lightweight mixin library for Sass.</li>
+<li>
+<a href="http://visionmedia.github.io/nib/">Nib</a> - Nib is a small and powerful library for the Stylus CSS language.</li>
+<li>Additionally, you should also check the following pages:
+
+<ul>
+<li>
+<a href="http://list.ly/list/303-alternatives-to-twitter-bootstrap-html5-css3-responsive-framework">listly alternatives</a>
+
+<ul>
+<li><a href="http://stackoverflow.com/questions/9212536/alternatives-to-twitter-bootstrap">stackoverflow alternatives</a></li>
+<li><a href="http://alternativeto.net/software/bootstrap/">alternativeto.net list</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol><h2>
+<a name="conclusion-1" class="anchor" href="#conclusion-1"><span class="octicon octicon-link"></span></a>Conclusion</h2>
+
+<p>This tutorial served as a <strong>small</strong> introduction to Bootstrap. If you have never heard of it before then now you should be at least familiar with the basic concepts of the framework, and hopefully ready to expand your knowledge and fly on your own.
+If you have read / watched all of our recommendations, you should now be able to answer all of the introductory questions. Still, here is a small summary:</p>
+
+<ol>
+<li>Bootstrap is a framework with CSS and Javascript files that helps you developed websites faster by giving you a pre-defined, customizable and expandable set of tools that you can use.</li>
+<li>In the old days, people had to use several different tools to make their websites work. These would eventually lead to projects hard to maintain and tangled code. Furthermore, there was no easy way for people to make their website consistent in multiple devices, screens and it was very hard to develop a website without art design resources. Bootstrap was born from these needs and it addresses them all.</li>
+<li>Bootstrap has many features. For a detailed information guide you should check the <a href="http://twitter.github.io/bootstrap/index.html">Bootstrap official website</a>. However, the ones that we addressed in this tutorial are the fixed and fluid layouts, responsive design, many interface components and Javascript snippets as well.</li>
+<li>Bootstrap works by adding specific code to your HTML. There you use pre-defined classes for your tags, and you let Bootstrap do the magic.</li>
+<li>The community support for Bootstrap is great, to say the least. There plenty of tutorials out there, free templates and books that you can read for free. </li>
+<li>This big diversity can ultimately harm Bootstrap because it divides the community and therefore its resources. Also, bootstrap differs significantly from version to version and its artistic tools are quite limited. </li>
+<li>This list could go on and on. In fact the answer to this question has a chapter on its own. You should totally go and read it again :P</li>
+</ol><h2>
+<a name="more-guides" class="anchor" href="#more-guides"><span class="octicon octicon-link"></span></a>MORE GUIDES</h2>
+
+<p>Here are more guides from me</p>
+
+<ul>
+<li><a href="https://github.com/Dev-Dipesh/automatic-deploy-site-with-git">Automaticaly Deploy your site with GITHub</a></li>
+<li><a href="https://github.com/Dev-Dipesh/Guide-to-GIT-patch-mode">GITHub Patch Mode: git add -p: The most powerful git feature you're not using yet</a></li>
+</ul><h2>
+<a name="sources" class="anchor" href="#sources"><span class="octicon octicon-link"></span></a>Sources</h2>
+
+<ul>
+<li>Bootstrap Tutorial: <a href="http://www.w3resource.com/twitter-bootstrap/tutorial.php">http://www.w3resource.com/twitter-bootstrap/tutorial.php</a>
+</li>
+<li>Bootstrap info: <a href="http://en.wikipedia.org/wiki/Twitter_Bootstrap">http://en.wikipedia.org/wiki/Twitter_Bootstrap</a>
+</li>
+<li>What is Bootstrap?: <a href="http://www.infragistics.com/community/blogs/marketing/archive/2013/04/17/what-is-twitter-bootstrap.aspx">http://www.infragistics.com/community/blogs/marketing/archive/2013/04/17/what-is-twitter-bootstrap.aspx</a>
+</li>
+<li>Official page: <a href="http://twitter.github.io/bootstrap/">http://twitter.github.io/bootstrap/</a>
+</li>
+<li>Bootstrap info: <a href="https://dev.twitter.com/blog/bootstrap-twitter">https://dev.twitter.com/blog/bootstrap-twitter</a>
+</li>
+</ul><h2>
+<a name="special-thanks" class="anchor" href="#special-thanks"><span class="octicon octicon-link"></span></a>Special Thanks</h2>
+
+<ul>
+<li>To <a href="http://www.codecademy.com/ksenja">Ksenja</a> for supporting me and being the only person doing so. It is thanks to her that I got the strength to finish this ahead of time. Hopefully I did not screw up and hopefully it was worth it. </li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/Dev-Dipesh">Dev-Dipesh</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
